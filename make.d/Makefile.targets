@@ -1,0 +1,3 @@
+Makefile.env::
+	@. make.d/scripts/Makefile.env.sh
+
