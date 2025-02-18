@@ -8,3 +8,6 @@ export
 help:
 	@. nideovim/make.d/scripts/help.sh
 	@. make.d/scripts/help.sh
+
+init:
+	@. nideovim/make.d/scripts/init.sh
