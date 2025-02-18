@@ -8,6 +8,6 @@ export
 
 MAKEFLAGS += --no-print-directory
 
-help::
+help:: Makefile.env
 	@$(MAKE) -C nideovim help
 	@. make.d/scripts/help.sh
