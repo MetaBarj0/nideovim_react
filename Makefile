@@ -1,13 +1,10 @@
-MAKEFILE_DIR := $(shell dirname $(MAKEFILE_LIST))
+NIDEOVIM_MAKEFILE_DIR := $(dir $(abspath $(firstword $(MAKEFILE_LIST))))nideovim
 
-include nideovim/Makefile
 include make.d/Makefile.targets
 include Makefile.env
 
 export
 
-MAKEFLAGS += --no-print-directory
-
-help:: Makefile.env
-	@$(MAKE) -C nideovim help
+help:
+	@. nideovim/make.d/scripts/help.sh
 	@. make.d/scripts/help.sh

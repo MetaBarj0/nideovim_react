@@ -1,3 +1,2 @@
-Makefile.env::
-	@. make.d/scripts/Makefile.env.sh
-
+Makefile.env:
+	@. nideovim/make.d/scripts/Makefile.env.sh
