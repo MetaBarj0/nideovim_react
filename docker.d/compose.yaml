@@ -1,2 +1,4 @@
 include:
-  - ../nideovim/docker.d/compose.yaml
+  - path:
+      - ../nideovim/docker.d/compose.yaml
+      - override.yaml
