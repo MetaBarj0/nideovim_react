@@ -1,3 +1,6 @@
+nideovim/make.d/Makefile.variables:
+	@. make.d/scripts/init_nideovim_submodule.sh
+
 Makefile.env:
 	@. nideovim/make.d/scripts/Makefile.env.sh
 
