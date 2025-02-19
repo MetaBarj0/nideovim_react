@@ -3,3 +3,9 @@ Makefile.env:
 
 config:
 	@. nideovim/make.d/scripts/config.sh
+
+clean: down
+	@. nideovim/make.d/scripts/clean.sh
+
+ps:
+	@. nideovim/make.d/scripts/ps.sh
