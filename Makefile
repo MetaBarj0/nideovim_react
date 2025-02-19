@@ -1,7 +1,5 @@
-NIDEOVIM_MAKEFILE_DIR := $(dir $(abspath $(firstword $(MAKEFILE_LIST))))nideovim
-
+include make.d/Makefile.variables
 include make.d/Makefile.targets
-include Makefile.env
 
 export
 
@@ -11,3 +9,7 @@ help:
 
 init:
 	@. nideovim/make.d/scripts/init.sh
+
+build:
+	@$(MAKE) -C nideovim build
+	@. make.d/scripts/build.sh

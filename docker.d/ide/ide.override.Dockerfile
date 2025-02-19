@@ -1,0 +1,7 @@
+ARG BASE_IMAGE=nideovim_ide_image
+
+FROM ${BASE_IMAGE}
+ARG CREATE_NEXT_APP_MAJOR_VERSION=15
+ARG USER_NAME=root
+USER ${USER_NAME}
+RUN npm install -g create-next-app@^${CREATE_NEXT_APP_MAJOR_VERSION}
