@@ -1,2 +1,5 @@
 Makefile.env:
 	@. nideovim/make.d/scripts/Makefile.env.sh
+
+config:
+	@. nideovim/make.d/scripts/config.sh
