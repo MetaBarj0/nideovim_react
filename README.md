@@ -1,6 +1,6 @@
 # nideovim-react
 
-A specialization of `nideovim` especially suited for react applications
+An extension of `nideovim` especially suited for react applications
 development.
 
 ## prerequisites
@@ -40,6 +40,8 @@ For MacOS, ensure to install `gsed` using Homebrew for instance.
 5. shutdown with the `make down` command.
 6. getting some help with the `make help` command.
 
-## TODO
+## base project
 
-- document new targets related to react stuff
+`nideovim_react` is an extension of the parent project
+[nideovim](https://github.com/MetaBarj0/nideovim.git). It is specified as
+submodule in the `nideovim` folder.
