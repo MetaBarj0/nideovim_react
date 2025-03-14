@@ -11,6 +11,7 @@ main() {
     --build-arg BASE_IMAGE="${COMPOSE_PROJECT_NAME}_ide_image" \
     --build-arg CREATE_NEXT_APP_MAJOR_VERSION="${CREATE_NEXT_APP_MAJOR_VERSION}" \
     --build-arg USER_NAME="$(get_user_name)" \
+    --target="${target_stage?}" \
     -t "${COMPOSE_PROJECT_NAME}"_ide_image \
     -f docker.d/ide/ide.override.Dockerfile \
     docker.d/ide

@@ -10,7 +10,7 @@ init:
 	@. nideovim/make.d/scripts/init.sh
 
 build:
-	@$(MAKE) -C nideovim build
+	@$(MAKE) target_stage=end -C nideovim build
 	@. make.d/scripts/build.sh
 
 up:

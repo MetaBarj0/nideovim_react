@@ -4,6 +4,8 @@ nideovim/make.d/Makefile.variables:
 Makefile.env:
 	@. nideovim/make.d/scripts/Makefile.env.sh
 
+build: target_stage=end
+
 config:
 	@. nideovim/make.d/scripts/config.sh
 
